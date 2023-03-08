@@ -6,4 +6,12 @@ export const StyledAppContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: 1444px) {
+    position: relative;
+    flex-direction: row;
+    width: 40.625rem;
+    height: 28.125rem;
+  }
+
 `

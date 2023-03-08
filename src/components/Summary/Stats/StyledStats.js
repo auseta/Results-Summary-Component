@@ -4,15 +4,20 @@ export const StyledStatsContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
+  gap: 1.25rem;
+
+  @media (min-width: 1444px) {
+    gap: 15px;
+  }
+
 `
 export const StyledStatContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border-radius: 8px;
-  padding: 15px 15px;
+  border-radius: 0.5rem;
+  padding: 0.938rem;
   background-color: ${props => {
     if (props.category === 'Reaction') return "hsla(0.355, 100%, 67%, 0.12)"
     if (props.category === 'Memory') return "hsla(38.839, 100%, 56%, 0.12)"
@@ -28,7 +33,7 @@ export const StyledStatContainer = styled.div`
 export const StyledCategoryContainer = styled.div`
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625rem;
 
   & h4 {
     color: ${props => {
@@ -41,7 +46,7 @@ export const StyledCategoryContainer = styled.div`
   }
 `
 export const StyledScoreContainer = styled.div`
-  margin-right: 5px;
+  margin-right: 0.313rem;
   display: flex;
   align-items: center;
   & h4 {

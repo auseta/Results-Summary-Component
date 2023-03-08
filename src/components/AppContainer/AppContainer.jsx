@@ -9,7 +9,6 @@ const AppContainer = () => {
     <StyledAppContainer>
       <Results/>
       <Summary/>
-      <StyledButton>Continue</StyledButton>
     </StyledAppContainer>
   )
 }
